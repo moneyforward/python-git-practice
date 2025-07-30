@@ -1,0 +1,22 @@
+{
+  "contacts": [
+    {
+      "name": "abc",
+      "age": 30,
+      "city": "New York",
+      "email": "abc@email.com"
+    },
+    {
+      "name": "xyz",
+      "age": 25,
+      "city": "Los Angeles",
+      "email": "xyz@email.com"
+    },
+    {
+      "name": "pqr",
+      "age": 28,
+      "city": "Chicago",
+      "email": "pqr@email.con"
+    }
+  ]
+}

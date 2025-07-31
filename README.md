@@ -1,26 +1,40 @@
-# Python Git Practice
-This repository is created to practice basic Git commands and understand how to structure a simple Python application.
-# Goal
-- Learn Git basics
-- Set up a Python project structure
-- Practice writing and executing simple Python scripts
+# JSON Reader App
 
-# How to Run the Application
-1. Clone the repo:
-   git clone https://github.com/moneyforward/python-git-practice.git
-   
-   cd python-git-practice
+This is a simple Python application that reads and displays JSON content from a specified file path. It includes robust error handling for common issues like invalid files, permission errors, and malformed JSON content.
 
-2. Set up a virtual environment:
+# How to Run the App
 
-python3 -m venv venv
-source venv/bin/activate
+From the root directory of the project:
+   python -m app.main
 
-3. Run the app:
-python app/main.py
 
-Sample Output
-Hello, World!
+When prompted:
+   Enter the path to the JSON file: valid.json
 
-Run Tests
-python -m unittest discover -s tests
+
+# Features
+
+      Accepts file path input from user    
+      Loads JSON using json module      
+      Pretty-prints JSON content if valid     
+      Handles the following errors gracefully:   
+      FileNotFoundError: If the file doesn't exist      
+      PermissionError: If read permissions are missing      
+      json.JSONDecodeError: If JSON is malformed      
+      TypeError: If the content is not a dict or list
+      Other unexpected exceptions
+
+
+For protected.json, you can simulate no-permission by running:
+      chmod 000 protected.json (on Unix/macOS)
+
+
+
+# Requirements
+
+      Python 3.6+
+      No external dependencies — only standard library is used
+      
+
+
+

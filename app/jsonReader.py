@@ -17,16 +17,16 @@ def read_json(file_path="data.json"):
 
     except FileNotFoundError:
         print(f" File '{file_path}' not found.")
+
     except PermissionError:
         print(f" Permission denied to read '{file_path}'.")
+
     except json.JSONDecodeError as e:
         print(f" Invalid JSON format: {e}")
+
     except TypeError as e:
         print(f" Type error: {e}")
+
     except Exception as e:
         print(f" Unexpected error: {e}")
-
-
-
-
 
